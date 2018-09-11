@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+const google = window.google;
+
 export default class extends Component {
   shouldComponentUpdate() {
     return false;
@@ -18,7 +20,8 @@ export default class extends Component {
 
   render() {
     return (
-      <div id="map" ref="map" />
+      // <div id="map" ref="map" />
+      <div className="map" ref="map" />
     );
   }
 }
